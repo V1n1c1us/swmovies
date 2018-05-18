@@ -18,8 +18,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.swService.getMyUserGitHub().subscribe(data => {
       this.user = data;
-      console.log(this.user.name);
-      console.log(this.user.avatar_url);
     });
   }
 }

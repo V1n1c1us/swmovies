@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
           <h4 class="text-white">
-            <img class="imgUser" src="{{ user.avatar_url }}" alt=""><a class="text-white" href="{{ user.html_url }}">{{ user.name }}</a>
+            <img class="imgUser" [src]="user.avatar_url" alt="Imagem do Perfil"><a class="text-white" href="{{ user.html_url }}">{{ user.name }}</a>
           </h4>
           <p class="text-white">{{ user.bio }}</p>
         </div>

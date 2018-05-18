@@ -5,4 +5,6 @@ export class Movies {
   results: any[];
   opening_crawl: string;
   title: string;
+  producer: string;
+  director: string;
 }
