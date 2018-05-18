@@ -15,3 +15,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.btn{
+  background: none;
+  border: 1px solid rgba(170, 170, 170, 0.8);
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+}
+.btn:hover{
+  box-shadow: 0px 0px 18px .9px #ebd800;
+}
+

@@ -3,4 +3,6 @@ export class Movies {
   next: any;
   previous: any;
   results: any[];
+  opening_crawl: string;
+  title: string;
 }
