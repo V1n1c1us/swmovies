@@ -15,11 +15,6 @@ To get started, make sure you are in the root directory of this project. Below h
 - angular/cli
 - git
 
-If you do not have any of the resources listed above, here is a great blog post with instructions on installing Node.js, and npm.
-
-To install git, here is the git documentation.
-To install Angular, here is the git documentation.
-
 # Usage
 - Clone this repository
 - run ng serve
