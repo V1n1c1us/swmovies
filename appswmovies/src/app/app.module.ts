@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PrincipalComponent } from './principal/principal.component';
+import {HttpClient} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,9 +13,10 @@ import { PrincipalComponent } from './principal/principal.component';
     PrincipalComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClient
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HeaderComponent]
 })
 export class AppModule { }
