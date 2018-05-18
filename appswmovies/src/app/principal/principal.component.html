@@ -2,16 +2,17 @@
   <div class="row">
     <div class="col-md-4" *ngFor="let m of movies">
       <div class="card">
-        <img class="card-img-top" src="/assets/img/bg-stars.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{m.title}} - {{last}}</h5>
-          <p class="card-text"><!--{{m.planets}}--></p>
-          <a (click)="detalhes(m)" class="btn btn-primary">Go somewhere</a>
+        <div class="card-body text-center">
+          <h5 class="card-title">{{m.title }}</h5>
+          <blockquote class="blockquote">
+            <p class="mb-0 card-text">{{ m.opening_crawl }}</p>
+            <footer class="blockquote-footer">Director: <cite title="Source Title">{{ m.director }}</cite> and Producer <cite title="Source Title">{{ m.producer }}</cite></footer>
+          </blockquote>
+          <a (click)="detalhes(m)" class="btn btn-primary">Synopsis</a>
         </div>
       </div>
     </div>
   </div>
-
 </div>
 <div class="modal fade" id="detalhes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -27,8 +28,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
+
