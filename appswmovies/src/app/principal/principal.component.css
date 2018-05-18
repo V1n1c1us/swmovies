@@ -1,0 +1,11 @@
+.lista-filmes{
+  margin-top: 5%;
+}
+.card{
+  margin-top: 10%;
+  border: none;
+  box-shadow:2px 2px 10px rgba(170, 170, 170, 0.3); border:none;
+}
+.card:hover{
+  box-shadow: 0px 0px 18px .9px #ebd800;
+}
