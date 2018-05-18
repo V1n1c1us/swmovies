@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from '../model/user.model';
 import {SwserviceService} from '../swservice.service';
 
 @Component({
@@ -9,9 +10,16 @@ import {SwserviceService} from '../swservice.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private swservice: SwserviceService) { }
+  public user: User;
 
-  ngOnInit() {
+  constructor(private swService: SwserviceService) {
   }
 
+  ngOnInit() {
+    this.swService.getMyUserGitHub().subscribe(data => {
+      this.user = data;
+      console.log(this.user.name);
+      console.log(this.user.avatar_url);
+    });
+  }
 }

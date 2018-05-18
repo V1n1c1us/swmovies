@@ -15,7 +15,7 @@ export class SwserviceService {
     this.headers.append('Access-Control-Allow-Origin', '*');
     this.headers.append('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT, OPTIONS, HEAD');
   }
-  // get Filsm
+  // get Films
   getFilms(): Observable<any> {
     return this.http.get(this.urlFilms, {headers: this.headers});
   }
